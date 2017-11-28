@@ -1,2 +1,2 @@
 # WPMaterial
-Simple WP Theme based on materialize css
+Simple WordPress Theme based on materialize css
