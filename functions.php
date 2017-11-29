@@ -43,10 +43,10 @@ function wpmaterial_widgets_init()
 		'name'          => esc_html__( 'Sidebar', 'wpmaterial' ),
 		'id'            => 'sidebar',
 		'description'   => '',
-		'before_widget' => '<div id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</div>',
-		'before_title'  => '<h3 class="widget-title"><span>',
-		'after_title'   => '</span></h3>',
+		'before_widget' => '<div class="row"><div id="%1$s" class="widget %2$s"><div class="col s12 l12"><div class="card-panel center-align">',
+		'after_widget'  => '</div></div></div></div>',
+		'before_title'  => '<div class="teal lighten-2 pad"><span class="white-text"><h5>',
+		'after_title'   => '</h5></span></div>',
    	));
 	//First Footer
 	register_sidebar(array(

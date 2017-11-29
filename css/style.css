@@ -14,7 +14,7 @@ nav .brand-logo {
 p {
   line-height: 2rem;
 }
-
+#logo-container{margin-top: -18px;}
 .button-collapse {
   color: #26a69a;
 }
@@ -51,6 +51,7 @@ p {
 .icon-block .material-icons {
   font-size: inherit;
 }
+.marg{margin: 50px;}
 .pad{padding: 3px}
 .padd{padding-left: 10px; padding-top: 5px; padding-right: 10px;}
 .card-panel{
