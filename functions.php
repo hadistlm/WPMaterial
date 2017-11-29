@@ -1,5 +1,4 @@
 <?php
-
 /*
  * ======================================================
  * 					JS Plugins
@@ -33,6 +32,52 @@ add_action('wp_enqueue_scripts', 'wpmaterial_script_init');
 
 /*
  * ======================================================
+ * 					Theme Supprot
+ * ======================================================
+ */
+
+//Register Custom Header
+$defaults = array(
+    'default-image' => '',
+    'random-default' => false,
+    'width' => 1920,
+    'height' => 1280,
+    'flex-height' => false,
+    'flex-width' => false,
+    'default-text-color' => '',
+    'header-text' => true,
+    'uploads' => true,
+    'wp-head-callback' => '',
+    'admin-head-callback' => '',
+    'admin-preview-callback' => '',
+    'video' => false,
+    'video-active-callback' => 'is_front_page'
+);
+add_theme_support( 'custom-header', $defaults );
+
+//Register custom bg
+$data = array(
+    'default-image' => '',
+    'default-preset' => 'default',
+    'default-position-x' => 'left',
+    'default-position-y' => 'top',
+    'default-size' => 'auto',
+    'default-repeat' => 'repeat',
+    'default-attachment' => 'scroll',
+    'default-color' => '',
+    'wp-head-callback' => '_custom_background_cb',
+    'admin-head-callback' => '',
+    'admin-preview-callback' => ''
+);
+add_theme_support( 'custom-background', $data );
+
+//register dynamic menus
+register_nav_menus(array(
+    'primary' => __('Primary Menu', 'wpmaterial')
+));
+
+/*
+ * ======================================================
  * 					Widgets Init
  * ======================================================
  */
@@ -48,6 +93,40 @@ function wpmaterial_widgets_init()
 		'before_title'  => '<div class="teal lighten-2 pad"><span class="white-text"><h5>',
 		'after_title'   => '</h5></span></div>',
    	));
+
+	//Widget Home page
+	register_sidebar(array(
+		'name' 			=> esc_html__( 'Main 1', 'wpmaterial' ),
+		'id'            => 'main-menu-one',
+		'description'   => '',
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h5 class="center">',
+		'after_title'   => '</h5>',
+	));
+
+	//Widget Home page
+	register_sidebar(array(
+		'name' 			=> esc_html__( 'Main 2', 'wpmaterial' ),
+		'id'            => 'main-menu-two',
+		'description'   => '',
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h5 class="center">',
+		'after_title'   => '</h5>',
+	));
+
+	//Widget Home page
+	register_sidebar(array(
+		'name' 			=> esc_html__( 'Main 3', 'wpmaterial' ),
+		'id'            => 'main-menu-third',
+		'description'   => '',
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h5 class="center">',
+		'after_title'   => '</h5>',
+	));
+
 	//First Footer
 	register_sidebar(array(
 		'name'          => __( 'Footer 1', 'wpmaterial' ),

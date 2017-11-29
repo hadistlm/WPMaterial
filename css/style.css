@@ -51,11 +51,11 @@ p {
 .icon-block .material-icons {
   font-size: inherit;
 }
-.marg{margin: 50px;}
-.pad{padding: 3px}
+
+.pad{padding: 3px; margin-bottom: 10px;}
 .padd{padding-left: 10px; padding-top: 5px; padding-right: 10px;}
 .card-panel{
-  padding: 0px 0px 25px 0px;
+  padding: 0px 0px 10px 0px;
 }
 
 footer.page-footer {

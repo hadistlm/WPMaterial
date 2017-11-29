@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
@@ -16,7 +16,7 @@
     <div class="nav-wrapper container">
       <a id="logo-container" href="<?php echo site_url(); ?>" class="brand-logo"><img src="<?php echo get_template_directory_uri()?>/images/logo.png"></a>
       <ul class="right hide-on-med-and-down">
-        <?php wp_list_pages(array('title_li' => '')); ?>
+        <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
       </ul>
 
       <div id="nav-mobile" class="side-nav">
