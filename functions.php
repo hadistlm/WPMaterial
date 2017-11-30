@@ -69,6 +69,36 @@ $data = array(
     'admin-head-callback' => '',
     'admin-preview-callback' => ''
 );
+
+//Register Custom COmments sec
+function coment_arg(){
+	$comments_args = array(
+	    'label_submit'=>'Submit',
+	    'class_submit'=>'btn waves-effect waves-light extmar',
+	    'title_reply'=>'Leave a Comment',
+	    'comment_notes_after' => '',
+	    'comment_field' => ' 
+	        <div class="input-field col s12"><textarea class="materialize-textarea" placeholder="Comments" rows="10" id="comment" name="comment" aria-required="true"></textarea></div>',
+	    'fields' => apply_filters( 'comment_form_default_fields', array(
+			'author' =>
+			    '<div class="input-field col s6">' .
+			    '<input class="form-control floating-label" placeholder="Name" id="author" name="author" type="text" size="30" aria-required="true" /></div>',
+
+			'email' =>
+			    '<div class="input-field col s6">' .
+			    '<input class="validate" placeholder="Email" id="email" name="email" type="text" size="30" aria-required="true"/></div>',
+
+			'url' =>
+			    '<div class="input-field col s12">'.
+			    '<input class="form-control floating-label" placeholder="Website" id="url" name="url" type="text" size="30" /></div>'
+			)
+		),
+	);
+
+	return $comments_args;
+}
+
+
 add_theme_support( 'custom-background', $data );
 
 //register dynamic menus

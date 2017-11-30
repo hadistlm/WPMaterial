@@ -44,7 +44,29 @@ p {
     top: 0;
   }
 }
+.kiri{
+  display: block;
+  border: 2px solid #4caf50;
+  text-align: center;
+}
+.kiri:hover{
+  background-color: #4caf50;
+  color:#fff !important;
+}
 
+.navigation.kiri.strong a{
+  color: #fff;
+}
+
+.kanan{
+  display: inline-block;
+  border: 2px solid #4caf50;
+  text-align: right;
+}
+.kanan:hover{
+  background-color: #4caf50;
+  color:#fff;
+}
 .icon-block {
   padding: 0 15px;
 }
@@ -52,6 +74,9 @@ p {
   font-size: inherit;
 }
 
+.extmar{margin-left: 10px;}
+.comment-reply-title{margin-left: 10px;}
+.comment-notes{margin-left: 10px;}
 .pad{padding: 3px; margin-bottom: 10px;}
 .padd{padding-left: 10px; padding-top: 5px; padding-right: 10px;}
 .card-panel{

@@ -63,7 +63,7 @@
 		      <div class="row">
 		        <div class="col s12 center">
 		          <h3><i class="mdi-content-send brown-text"></i></h3>
-		          <div style="text-align: justify;"><?php the_content(); ?></div>
+		          <div style="text-align: justify;" class="light"><?php the_content(); ?></div>
 		        </div>
 		      </div>
 		    </div>
