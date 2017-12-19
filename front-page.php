@@ -53,13 +53,12 @@
 		        </div>
 		      </div>
 		    </div>
-		    <div class="parallax"><img src="http://localhost/MaterializeWP/wp-content/themes/wpmaterial/images/background2.jpg" alt="Unsplashed background img 2"></div>
+		    <div class="parallax"><img src="<?= get_option('img') ?>" alt="Unsplashed background img 2"></div>
 		  </div>
 		  <?php endif; ?>
 
 		  <div class="container">
 		    <div class="section">
-
 		      <div class="row">
 		        <div class="col s12 center">
 		          <h3><i class="mdi-content-send brown-text"></i></h3>
@@ -69,7 +68,6 @@
 		    </div>
 		  </div>
 
-
 		  <div class="parallax-container valign-wrapper">
 		    <div class="section no-pad-bot">
 		      <div class="container">
@@ -78,7 +76,7 @@
 		        </div>
 		      </div>
 		    </div>
-		    <div class="parallax"><img src="http://localhost/MaterializeWP/wp-content/themes/wpmaterial/images/background3.jpg" alt="Unsplashed background img 3"></div>
+		    <div class="parallax"><img src="<?= get_option('imgs') ?>" alt="Unsplashed background img 3"></div>
 		  </div>
 	<?php endwhile; else: ?>
 		<p><?php _e('Sorry, this page does not exist.'); ?></p>
